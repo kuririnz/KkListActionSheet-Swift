@@ -6,7 +6,7 @@ The library is like an extension of the tableview to ActionSheet.
 in preparation
 
 ## Requirement
-* iOS 6.0+
+* iOS 8.0+
 * ARC
 
 ## Install
@@ -18,7 +18,7 @@ There are two ways to use this in your project:
 
 ```
 pratform :ios
-pod 'KkListActionSheet-swift'
+pod 'KkListActionSheet-Swift'
 ```
 
 ## Usage
@@ -26,30 +26,43 @@ pod 'KkListActionSheet-swift'
 KkListActionSheet uses a simple methodology. import header file and It defines a delegate(contains datasource)
 , its client implement. KkListActionSheetDelegate are like the combined UITableViewDelegate and UITableViewDatasource.
 
-<kbd>yourViewController.h</kbd>
+<kbd>yourViewController.swift</kbd>
 ```
-#import "KkListActionSheet"
-
-
-@interfase yourViewController : supperViewController <KkListActionSheetDelegate>
+class ViewController: UIViewController, KkListActionSheetDelegate {...}
 ```
 
 #### create instance
-```KkListActionSheet *varName = [KkListActionSheet createInit:uiViewController]```
+```
+var kkListActionSheet : kkListActionSheet?
+
+override func viewDidLoad () {
+    kkListActionSheet = kkListActionSheet.createInit(self)
+    kkListActionSheet!.delegate = self
+}
+```
 
 #### show KkListActionSheet
-```[kkListActionSheet showHide]```
+```
+kkListActionSheet.showHide()
+```
+
 
 #### set ListTitle
-```[kkListActionSheet setTitle:@"title]```
+```
+kkListActionSheet.setTitle("titleString")
+```
 or
-```[kkListActionSheet setAttrTitle:@"attributeTitle"]```
+```
+var attrTitle = NSMutableAttributedString("titleString")
+…
+kkListActionSheet.setAttrTitle(attrTitle)
+```
 
 ### example
 in preparation
 
 ## Licence
-[MIT](https://github.com/kuririnz/KkListActionSheet/blob/develop/LICENSE)
+[MIT](https://github.com/kuririnz/KkListActionSheet-SWIFT/blob/develop/LICENSE)
 
 ## Author
 [kuririnz](https://github.com/kuririnz)
