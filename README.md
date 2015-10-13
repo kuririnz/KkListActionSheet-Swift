@@ -12,7 +12,7 @@ in preparation
 ## Install
 There are two ways to use this in your project:
 
-* Copy KkListActionSheet directory into your project
+* Copy KkListActionSheet-Swift directory into your project
 
 * Install with CocoaPods to write Podfile
 
@@ -23,7 +23,7 @@ pod 'KkListActionSheet-Swift'
 
 ## Usage
 ### setDelegate
-KkListActionSheet uses a simple methodology. import header file and It defines a delegate(contains datasource)
+KkListActionSheet-Swift uses a simple methodology. import header file and It defines a delegate(contains datasource)
 , its client implement. KkListActionSheetDelegate are like the combined UITableViewDelegate and UITableViewDatasource.
 
 <kbd>yourViewController.swift</kbd>
@@ -33,10 +33,10 @@ class ViewController: UIViewController, KkListActionSheetDelegate {...}
 
 #### create instance
 ```
-var kkListActionSheet : kkListActionSheet?
+var kkListActionSheet : KkListActionSheet?
 
 override func viewDidLoad () {
-    kkListActionSheet = kkListActionSheet.createInit(self)
+    kkListActionSheet = KkListActionSheet.createInit(self)
     kkListActionSheet!.delegate = self
 }
 ```
