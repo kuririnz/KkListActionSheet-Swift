@@ -8,9 +8,9 @@ target 'KkListActionSheet-SwiftDemo' do
 end
 
 target 'KkListActionSheet-SwiftDemoTests' do
-
+  pod 'KkListActionSheet-Swift', :path=>'../'
 end
 
-target 'KkListActionSheet-SwiftDemoUITests' do
+# target 'KkListActionSheet-SwiftDemoUITests' do
 
-end
+# end
