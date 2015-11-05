@@ -3,11 +3,10 @@ The library is like an extension of the tableview to ActionSheet.
 
 
 ## Demo
-in preparation
+![KkListActionSheet-Swift Demo](KkListActionSheetExample/SampleMovie.gif)
 
 ## Requirement
 * iOS 8.0+
-* ARC
 
 ## Install
 There are two ways to use this in your project:

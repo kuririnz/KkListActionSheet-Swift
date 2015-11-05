@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C355A0035B06DA0FB400E91 /* Pods_KkListActionSheetSwiftDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8DF87347FF233FCCBC14974 /* Pods_KkListActionSheetSwiftDemoTests.framework */; };
+		9326F851EF6F3A204D5A5DC5 /* Pods_KkListActionSheetSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3649923F6F360C15619C79 /* Pods_KkListActionSheetSwiftDemo.framework */; };
+		9714E4781BCA9117009A569C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9714E4771BCA9117009A569C /* AppDelegate.swift */; };
+		9714E47A1BCA9117009A569C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9714E4791BCA9117009A569C /* ViewController.swift */; };
+		9714E47D1BCA9118009A569C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9714E47B1BCA9118009A569C /* Main.storyboard */; };
+		9714E47F1BCA9118009A569C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9714E47E1BCA9118009A569C /* Assets.xcassets */; };
+		9714E4821BCA9118009A569C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9714E4801BCA9118009A569C /* LaunchScreen.storyboard */; };
+		9714E48D1BCA9119009A569C /* KkListActionSheet_SwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9714E48C1BCA9119009A569C /* KkListActionSheet_SwiftDemoTests.swift */; };
+		97B9357B1BEAC2E600464E15 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9737A4271BCD7426001009E8 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9714E4891BCA9118009A569C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9714E46C1BCA9117009A569C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9714E4731BCA9117009A569C;
+			remoteInfo = "KkListActionSheet-SwiftDemo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E2415FBDA51E15CB88196F6 /* Pods-KkListActionSheetSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KkListActionSheetSwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-KkListActionSheetSwiftDemo/Pods-KkListActionSheetSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
+		26F1C5037B0F20FA5DB3A3B5 /* Pods-KkListActionSheetSwiftDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KkListActionSheetSwiftDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KkListActionSheetSwiftDemoTests/Pods-KkListActionSheetSwiftDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		27FA59F28D2061C7D306A3CC /* Pods-KkListActionSheetSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KkListActionSheetSwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KkListActionSheetSwiftDemo/Pods-KkListActionSheetSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9714E4741BCA9117009A569C /* KkListActionSheetSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KkListActionSheetSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9714E4771BCA9117009A569C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9714E4791BCA9117009A569C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9714E47C1BCA9118009A569C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9714E47E1BCA9118009A569C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9714E4811BCA9118009A569C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9714E4831BCA9118009A569C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9714E4881BCA9118009A569C /* KkListActionSheetSwiftDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KkListActionSheetSwiftDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9714E48C1BCA9119009A569C /* KkListActionSheet_SwiftDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KkListActionSheet_SwiftDemoTests.swift; sourceTree = "<group>"; };
+		9714E48E1BCA9119009A569C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9714E4B21BCAA481009A569C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9737A4271BCD7426001009E8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		97B935321BE86FE100464E15 /* KkListActionSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KkListActionSheet.xib; sourceTree = "<group>"; };
+		97B935341BE86FE100464E15 /* KkListActionSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KkListActionSheet.swift; sourceTree = "<group>"; };
+		97B935351BE86FE100464E15 /* KkListCloseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KkListCloseButton.swift; sourceTree = "<group>"; };
+		A4EFEAD0E4D09826C5D59D3D /* Pods-KkListActionSheetSwiftDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KkListActionSheetSwiftDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KkListActionSheetSwiftDemoTests/Pods-KkListActionSheetSwiftDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		A8DF87347FF233FCCBC14974 /* Pods_KkListActionSheetSwiftDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KkListActionSheetSwiftDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE3649923F6F360C15619C79 /* Pods_KkListActionSheetSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KkListActionSheetSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9714E4711BCA9117009A569C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97B9357B1BEAC2E600464E15 /* QuartzCore.framework in Frameworks */,
+				9326F851EF6F3A204D5A5DC5 /* Pods_KkListActionSheetSwiftDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9714E4851BCA9118009A569C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C355A0035B06DA0FB400E91 /* Pods_KkListActionSheetSwiftDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05F05BC1EC5EC19BDD2D89D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27FA59F28D2061C7D306A3CC /* Pods-KkListActionSheetSwiftDemo.debug.xcconfig */,
+				0E2415FBDA51E15CB88196F6 /* Pods-KkListActionSheetSwiftDemo.release.xcconfig */,
+				26F1C5037B0F20FA5DB3A3B5 /* Pods-KkListActionSheetSwiftDemoTests.debug.xcconfig */,
+				A4EFEAD0E4D09826C5D59D3D /* Pods-KkListActionSheetSwiftDemoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9714E46B1BCA9117009A569C = {
+			isa = PBXGroup;
+			children = (
+				9714E4B21BCAA481009A569C /* UIKit.framework */,
+				9714E4761BCA9117009A569C /* KkListActionSheetSwiftDemo */,
+				9714E48B1BCA9118009A569C /* KkListActionSheet-SwiftDemoTests */,
+				9714E4751BCA9117009A569C /* Products */,
+				98D367471254CA9725DF7376 /* Frameworks */,
+				05F05BC1EC5EC19BDD2D89D1 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		9714E4751BCA9117009A569C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9714E4741BCA9117009A569C /* KkListActionSheetSwiftDemo.app */,
+				9714E4881BCA9118009A569C /* KkListActionSheetSwiftDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9714E4761BCA9117009A569C /* KkListActionSheetSwiftDemo */ = {
+			isa = PBXGroup;
+			children = (
+				97B935301BE86FAC00464E15 /* KkListActionSheetSwift */,
+				9714E4771BCA9117009A569C /* AppDelegate.swift */,
+				9714E47E1BCA9118009A569C /* Assets.xcassets */,
+				9714E4831BCA9118009A569C /* Info.plist */,
+				9714E4801BCA9118009A569C /* LaunchScreen.storyboard */,
+				9714E47B1BCA9118009A569C /* Main.storyboard */,
+				9714E4791BCA9117009A569C /* ViewController.swift */,
+			);
+			path = KkListActionSheetSwiftDemo;
+			sourceTree = "<group>";
+		};
+		9714E48B1BCA9118009A569C /* KkListActionSheet-SwiftDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				9714E48E1BCA9119009A569C /* Info.plist */,
+				9714E48C1BCA9119009A569C /* KkListActionSheet_SwiftDemoTests.swift */,
+			);
+			name = "KkListActionSheet-SwiftDemoTests";
+			path = KkListActionSheetSwiftDemoTests;
+			sourceTree = "<group>";
+		};
+		97B935301BE86FAC00464E15 /* KkListActionSheetSwift */ = {
+			isa = PBXGroup;
+			children = (
+				97B935311BE86FE100464E15 /* resource */,
+				97B935331BE86FE100464E15 /* source */,
+			);
+			path = KkListActionSheetSwift;
+			sourceTree = "<group>";
+		};
+		97B935311BE86FE100464E15 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				97B935321BE86FE100464E15 /* KkListActionSheet.xib */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		97B935331BE86FE100464E15 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				97B935341BE86FE100464E15 /* KkListActionSheet.swift */,
+				97B935351BE86FE100464E15 /* KkListCloseButton.swift */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		98D367471254CA9725DF7376 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9737A4271BCD7426001009E8 /* QuartzCore.framework */,
+				CE3649923F6F360C15619C79 /* Pods_KkListActionSheetSwiftDemo.framework */,
+				A8DF87347FF233FCCBC14974 /* Pods_KkListActionSheetSwiftDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9714E4731BCA9117009A569C /* KkListActionSheetSwiftDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9714E49C1BCA9119009A569C /* Build configuration list for PBXNativeTarget "KkListActionSheetSwiftDemo" */;
+			buildPhases = (
+				9714E4701BCA9117009A569C /* Sources */,
+				9714E4711BCA9117009A569C /* Frameworks */,
+				9714E4721BCA9117009A569C /* Resources */,
+				20468D576DAC52FFC74D410D /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KkListActionSheetSwiftDemo;
+			productName = "KkListActionSheet-SwiftDemo";
+			productReference = 9714E4741BCA9117009A569C /* KkListActionSheetSwiftDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9714E4871BCA9118009A569C /* KkListActionSheetSwiftDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9714E49F1BCA9119009A569C /* Build configuration list for PBXNativeTarget "KkListActionSheetSwiftDemoTests" */;
+			buildPhases = (
+				9278D7CE155B4CFF16143EDD /* Check Pods Manifest.lock */,
+				9714E4841BCA9118009A569C /* Sources */,
+				9714E4851BCA9118009A569C /* Frameworks */,
+				9714E4861BCA9118009A569C /* Resources */,
+				BCE26061928C095BD725572D /* Embed Pods Frameworks */,
+				6C2D86CF7618694D7CC9E02B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9714E48A1BCA9118009A569C /* PBXTargetDependency */,
+			);
+			name = KkListActionSheetSwiftDemoTests;
+			productName = "KkListActionSheet-SwiftDemoTests";
+			productReference = 9714E4881BCA9118009A569C /* KkListActionSheetSwiftDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9714E46C1BCA9117009A569C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "keisuke kuribayashi";
+				TargetAttributes = {
+					9714E4731BCA9117009A569C = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					9714E4871BCA9118009A569C = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 9714E4731BCA9117009A569C;
+					};
+				};
+			};
+			buildConfigurationList = 9714E46F1BCA9117009A569C /* Build configuration list for PBXProject "KkListActionSheetSwiftDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9714E46B1BCA9117009A569C;
+			productRefGroup = 9714E4751BCA9117009A569C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9714E4731BCA9117009A569C /* KkListActionSheetSwiftDemo */,
+				9714E4871BCA9118009A569C /* KkListActionSheetSwiftDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9714E4721BCA9117009A569C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9714E4821BCA9118009A569C /* LaunchScreen.storyboard in Resources */,
+				9714E47F1BCA9118009A569C /* Assets.xcassets in Resources */,
+				9714E47D1BCA9118009A569C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9714E4861BCA9118009A569C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20468D576DAC52FFC74D410D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KkListActionSheetSwiftDemo/Pods-KkListActionSheetSwiftDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C2D86CF7618694D7CC9E02B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KkListActionSheetSwiftDemoTests/Pods-KkListActionSheetSwiftDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9278D7CE155B4CFF16143EDD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BCE26061928C095BD725572D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KkListActionSheetSwiftDemoTests/Pods-KkListActionSheetSwiftDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9714E4701BCA9117009A569C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9714E47A1BCA9117009A569C /* ViewController.swift in Sources */,
+				9714E4781BCA9117009A569C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9714E4841BCA9118009A569C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9714E48D1BCA9119009A569C /* KkListActionSheet_SwiftDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9714E48A1BCA9118009A569C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9714E4731BCA9117009A569C /* KkListActionSheetSwiftDemo */;
+			targetProxy = 9714E4891BCA9118009A569C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9714E47B1BCA9118009A569C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9714E47C1BCA9118009A569C /* Base */,
+			);
+			name = Main.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+		9714E4801BCA9118009A569C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9714E4811BCA9118009A569C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9714E49A1BCA9119009A569C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Keisuke Kuribayashi (8WZ3Y98WKV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Keisuke Kuribayashi (8WZ3Y98WKV)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "11381f29-620a-46a2-a8dd-23ecd1be108c";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9714E49B1BCA9119009A569C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Keisuke Kuribayashi (8WZ3Y98WKV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Keisuke Kuribayashi (8WZ3Y98WKV)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "11381f29-620a-46a2-a8dd-23ecd1be108c";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9714E49D1BCA9119009A569C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27FA59F28D2061C7D306A3CC /* Pods-KkListActionSheetSwiftDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Keisuke Kuribayashi (8WZ3Y98WKV)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = KkListActionSheetSwiftDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.kuririnz.KkListActionSheet-SwiftDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "11381f29-620a-46a2-a8dd-23ecd1be108c";
+			};
+			name = Debug;
+		};
+		9714E49E1BCA9119009A569C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E2415FBDA51E15CB88196F6 /* Pods-KkListActionSheetSwiftDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Keisuke Kuribayashi (8WZ3Y98WKV)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = KkListActionSheetSwiftDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.kuririnz.KkListActionSheet-SwiftDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "11381f29-620a-46a2-a8dd-23ecd1be108c";
+			};
+			name = Release;
+		};
+		9714E4A01BCA9119009A569C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26F1C5037B0F20FA5DB3A3B5 /* Pods-KkListActionSheetSwiftDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Keisuke Kuribayashi (8WZ3Y98WKV)";
+				INFOPLIST_FILE = KkListActionSheetSwiftDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.kuririnz.KkListActionSheet-SwiftDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "11381f29-620a-46a2-a8dd-23ecd1be108c";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KkListActionSheet-SwiftDemo.app/KkListActionSheet-SwiftDemo";
+			};
+			name = Debug;
+		};
+		9714E4A11BCA9119009A569C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4EFEAD0E4D09826C5D59D3D /* Pods-KkListActionSheetSwiftDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Keisuke Kuribayashi (8WZ3Y98WKV)";
+				INFOPLIST_FILE = KkListActionSheetSwiftDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.kuririnz.KkListActionSheet-SwiftDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "11381f29-620a-46a2-a8dd-23ecd1be108c";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KkListActionSheet-SwiftDemo.app/KkListActionSheet-SwiftDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9714E46F1BCA9117009A569C /* Build configuration list for PBXProject "KkListActionSheetSwiftDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9714E49A1BCA9119009A569C /* Debug */,
+				9714E49B1BCA9119009A569C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9714E49C1BCA9119009A569C /* Build configuration list for PBXNativeTarget "KkListActionSheetSwiftDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9714E49D1BCA9119009A569C /* Debug */,
+				9714E49E1BCA9119009A569C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9714E49F1BCA9119009A569C /* Build configuration list for PBXNativeTarget "KkListActionSheetSwiftDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9714E4A01BCA9119009A569C /* Debug */,
+				9714E4A11BCA9119009A569C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9714E46C1BCA9117009A569C /* Project object */;
+}
