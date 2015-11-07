@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KkListActionSheet"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KkListActionSheet" customModule="KkListActionSheetSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="59n-vX-7JZ">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                </view>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lLs-5N-ajW">
+                    <rect key="frame" x="0.0" y="150" width="600" height="450"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rGe-FJ-T3F" customClass="KkListCloseButton" customModule="KkListActionSheetSwift" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="16"/>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="リストタイトル" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQq-EL-Wq0">
+                            <rect key="frame" x="0.0" y="53" width="600" height="21"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="UeJ-kt-BYf">
+                            <rect key="frame" x="0.0" y="84" width="600" height="0.0"/>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="iN0-l3-epB" id="qnS-Gi-wNC"/>
+                                <outlet property="delegate" destination="iN0-l3-epB" id="QAZ-aP-ex2"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="top" secondItem="rGe-FJ-T3F" secondAttribute="top" id="0I4-rT-wSF"/>
+                        <constraint firstAttribute="trailing" secondItem="UeJ-kt-BYf" secondAttribute="trailing" id="4Wk-AO-qYU"/>
+                        <constraint firstItem="rGe-FJ-T3F" firstAttribute="bottom" secondItem="hQq-EL-Wq0" secondAttribute="top" id="CEb-AL-j3S"/>
+                        <constraint firstAttribute="leading" secondItem="UeJ-kt-BYf" secondAttribute="leading" id="XkC-YL-NvM"/>
+                        <constraint firstAttribute="trailing" secondItem="hQq-EL-Wq0" secondAttribute="trailing" id="eRV-35-B2J"/>
+                        <constraint firstAttribute="leading" secondItem="rGe-FJ-T3F" secondAttribute="leading" id="fuz-PP-ix6"/>
+                        <constraint firstAttribute="trailing" secondItem="rGe-FJ-T3F" secondAttribute="trailing" id="hde-Em-QQk"/>
+                        <constraint firstAttribute="leading" secondItem="hQq-EL-Wq0" secondAttribute="leading" id="l4I-hT-6Xb"/>
+                        <constraint firstItem="hQq-EL-Wq0" firstAttribute="bottom" secondItem="UeJ-kt-BYf" secondAttribute="top" id="rL9-M7-R9c"/>
+                        <constraint firstAttribute="bottom" secondItem="UeJ-kt-BYf" secondAttribute="bottom" id="ue1-nc-0AN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <accessibility key="accessibilityConfiguration">
+                <bool key="isElement" value="YES"/>
+            </accessibility>
+            <constraints>
+                <constraint firstItem="59n-vX-7JZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4xk-JI-5ho"/>
+                <constraint firstItem="59n-vX-7JZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8Bm-OU-dTD"/>
+                <constraint firstAttribute="trailing" secondItem="lLs-5N-ajW" secondAttribute="trailing" id="8dn-NZ-llh"/>
+                <constraint firstAttribute="trailing" secondItem="59n-vX-7JZ" secondAttribute="trailing" id="XvH-Gc-6JF"/>
+                <constraint firstAttribute="bottom" secondItem="lLs-5N-ajW" secondAttribute="top" id="aKT-M4-5Rz"/>
+                <constraint firstAttribute="bottom" secondItem="59n-vX-7JZ" secondAttribute="bottom" id="lNh-a9-y3o"/>
+                <constraint firstItem="lLs-5N-ajW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="t3E-00-JIk"/>
+            </constraints>
+            <connections>
+                <outlet property="kkActionSheet" destination="lLs-5N-ajW" id="fYH-Eu-smT"/>
+                <outlet property="kkActionSheetBackGround" destination="59n-vX-7JZ" id="KFU-5t-Di6"/>
+                <outlet property="kkCloseButton" destination="rGe-FJ-T3F" id="hbj-S3-9Ho"/>
+                <outlet property="kkTableView" destination="UeJ-kt-BYf" id="0V6-OR-deI"/>
+                <outlet property="titleLabel" destination="hQq-EL-Wq0" id="GKa-Vm-6i1"/>
+            </connections>
+        </view>
+    </objects>
+</document>
