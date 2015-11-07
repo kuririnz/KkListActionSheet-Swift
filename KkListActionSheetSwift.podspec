@@ -18,6 +18,9 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/kuririnz/KkListActionSheet-Swift.git", :tag => "0.0.2" }
   s.source_files = "KkListActionSheetSwift/source/*.swift"
   s.resource     = "KkListActionSheetSwift/resource/*.xib"
+  s.resource_bundles = {
+    "KkListActionSheetSwift" => ["resource/*.xib"]
+  }
   s.framework    = "QuartzCore"
   s.requires_arc = true
 end

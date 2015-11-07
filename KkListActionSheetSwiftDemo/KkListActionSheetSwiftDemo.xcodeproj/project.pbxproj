@@ -44,9 +44,6 @@
 		9714E48E1BCA9119009A569C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9714E4B21BCAA481009A569C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9737A4271BCD7426001009E8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		97B935321BE86FE100464E15 /* KkListActionSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KkListActionSheet.xib; sourceTree = "<group>"; };
-		97B935341BE86FE100464E15 /* KkListActionSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KkListActionSheet.swift; sourceTree = "<group>"; };
-		97B935351BE86FE100464E15 /* KkListCloseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KkListCloseButton.swift; sourceTree = "<group>"; };
 		A4EFEAD0E4D09826C5D59D3D /* Pods-KkListActionSheetSwiftDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KkListActionSheetSwiftDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KkListActionSheetSwiftDemoTests/Pods-KkListActionSheetSwiftDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		A8DF87347FF233FCCBC14974 /* Pods_KkListActionSheetSwiftDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KkListActionSheetSwiftDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3649923F6F360C15619C79 /* Pods_KkListActionSheetSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KkListActionSheetSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,7 +105,6 @@
 		9714E4761BCA9117009A569C /* KkListActionSheetSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
-				97B935301BE86FAC00464E15 /* KkListActionSheetSwift */,
 				9714E4771BCA9117009A569C /* AppDelegate.swift */,
 				9714E47E1BCA9118009A569C /* Assets.xcassets */,
 				9714E4831BCA9118009A569C /* Info.plist */,
@@ -127,32 +123,6 @@
 			);
 			name = "KkListActionSheet-SwiftDemoTests";
 			path = KkListActionSheetSwiftDemoTests;
-			sourceTree = "<group>";
-		};
-		97B935301BE86FAC00464E15 /* KkListActionSheetSwift */ = {
-			isa = PBXGroup;
-			children = (
-				97B935311BE86FE100464E15 /* resource */,
-				97B935331BE86FE100464E15 /* source */,
-			);
-			path = KkListActionSheetSwift;
-			sourceTree = "<group>";
-		};
-		97B935311BE86FE100464E15 /* resource */ = {
-			isa = PBXGroup;
-			children = (
-				97B935321BE86FE100464E15 /* KkListActionSheet.xib */,
-			);
-			path = resource;
-			sourceTree = "<group>";
-		};
-		97B935331BE86FE100464E15 /* source */ = {
-			isa = PBXGroup;
-			children = (
-				97B935341BE86FE100464E15 /* KkListActionSheet.swift */,
-				97B935351BE86FE100464E15 /* KkListCloseButton.swift */,
-			);
-			path = source;
 			sourceTree = "<group>";
 		};
 		98D367471254CA9725DF7376 /* Frameworks */ = {

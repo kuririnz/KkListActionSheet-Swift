@@ -79,8 +79,12 @@ public class KkListActionSheet: UIView, UITableViewDelegate, UITableViewDataSour
         let className = NSStringFromClass(KkListActionSheet)
         let currentIdx = className.rangeOfString(".")
         styleIndex = HIGHSTYLE.DEFAULT
-        let tmp = NSBundle.mainBundle().loadNibNamed(className.substringFromIndex(currentIdx!.endIndex), owner: nil, options: nil)
-        let initClass = tmp.first as! KkListActionSheet
+        
+        // NSBundleを調べる
+        let frameworkBundle = NSBundle(forClass: KkListActionSheet.self)
+        let classBundle = NSBundle(path: frameworkBundle.pathForResource("KkListActionSheetSwift", ofType: "bundle")!)
+        let initClass = classBundle!.loadNibNamed(className.substringFromIndex(currentIdx!.endIndex), owner: nil, options: nil)
+            .first as! KkListActionSheet
         parent.view.addSubview(initClass)
         return initClass
     }
@@ -143,7 +147,7 @@ public class KkListActionSheet: UIView, UITableViewDelegate, UITableViewDataSour
         // set device change notification center
         if supportOrientList.count > 1 {
             NSNotificationCenter.defaultCenter().addObserver(self,
-                selector: Selector("didRotation:"),
+                selector: "didRotation:",
                 name: "UIDeviceOrientationDidChangeNotification",
                 object: nil)
         }
@@ -187,11 +191,11 @@ public class KkListActionSheet: UIView, UITableViewDelegate, UITableViewDataSour
     }
     
     // MARK: Gesture Recognizer Action
-    private func onTapGesture(recognizer: UITapGestureRecognizer) {
+    func onTapGesture(recognizer: UITapGestureRecognizer) {
         self.showHide()
     }
     
-    private func onPanGesture(recognizer: UIPanGestureRecognizer) {
+    func onPanGesture(recognizer: UIPanGestureRecognizer) {
         let location = recognizer.translationInView(self)
         var moveRect = self.kkActionSheet.frame
         let afterPosition = moveRect.origin.y + location.y
@@ -296,7 +300,7 @@ public class KkListActionSheet: UIView, UITableViewDelegate, UITableViewDataSour
     }
     
     // MARK: Change Device Rotate Method
-    private func didRotation(notification: NSNotification) {
+    func didRotation(notification: NSNotification) {
         let orientation = UIDevice.currentDevice().orientation as UIDeviceOrientation
         if !orientation.isPortrait && !orientation.isLandscape { return }
         
