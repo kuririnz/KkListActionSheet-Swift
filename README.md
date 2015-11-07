@@ -17,7 +17,13 @@ There are two ways to use this in your project:
 
 ```
 pratform :ios
-pod 'KkListActionSheet-Swift'
+target 'yourtarget' do
+ pod 'KkListActionSheetSwift'
+end
+
+target 'yourtargetTests' do
+  pod 'KkListActionSheetSwift'
+end
 ```
 
 ## Usage
