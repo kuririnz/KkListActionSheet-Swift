@@ -5,11 +5,9 @@ use_frameworks!
 
 # source 'https://github.com/CocoaPods/Specs.git'
 target 'KkListActionSheetSwiftDemo' do
- pod 'KkListActionSheetSwift', :path => '../'
- # pod 'KkListActionSheet-Swift'
+ pod 'KkListActionSheet-Swift'
 end
 
 target 'KkListActionSheetSwiftDemoTests' do
-  pod 'KkListActionSheetSwift', :path => '../'
-  # pod 'KkListActionSheet-Swift'
+  pod 'KkListActionSheet-Swift'
 end
