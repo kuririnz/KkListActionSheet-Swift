@@ -82,9 +82,8 @@ public class KkListActionSheet: UIView, UITableViewDelegate, UITableViewDataSour
         
         // NSBundleを調べる
         let frameworkBundle = NSBundle(forClass: KkListActionSheet.self)
-        let classBundle = NSBundle(path: frameworkBundle.pathForResource("KkListActionSheetSwift", ofType: "bundle")!)
-        let initClass = classBundle!.loadNibNamed(className.substringFromIndex(currentIdx!.endIndex), owner: nil, options: nil)
-            .first as! KkListActionSheet
+        let nib = UINib(nibName: className.substringFromIndex(currentIdx!.endIndex), bundle: frameworkBundle)
+        let initClass = nib.instantiateWithOwner(nil, options: nil).first as! KkListActionSheet
         parent.view.addSubview(initClass)
         return initClass
     }
