@@ -36,21 +36,33 @@ KkListActionSheet-Swift uses a simple methodology. import header file and It def
 class ViewController: UIViewController, KkListActionSheetDelegate {...}
 ```
 
-#### create instance
+#### Show Position
 ```
-var kkListActionSheet : KkListActionSheet?
+public class func createInit(parent: UIViewController) -> KkListActionSheet
+```
+or
+```
+public class func createInit(parent: UIViewController, style styleIdx:HIGHSTYLE) -> KkListActionSheet
+```
 
-override func viewDidLoad () {
-    kkListActionSheet = KkListActionSheet.createInit(self)
-    kkListActionSheet!.delegate = self
-}
-```
+**style Pattern in portrait**
+* DEFAULT : about 60 percent in screen height
+* MIDDLE  : screen height half
+* LOW     : about 30 percent in screen height
+
+**style Pattern in Landscape**
+* DEFAULT : about 60 percent in screen height
+* MIDDLE & LOW : screen height half
 
 #### show KkListActionSheet
 ```
 kkListActionSheet.showHide()
 ```
 
+#### hide ListTitle
+```
+public func setHiddenTitle ()
+```
 
 #### set ListTitle
 ```
@@ -64,7 +76,25 @@ kkListActionSheet.setAttrTitle(attrTitle)
 ```
 
 ### example
-in preparation
+* import kkListActionSheetSwift
+* implement KkListActionSheetDelegate and Method
+```
+import kkListActionSheetSwift
+
+class yourViewController: UIViewController, kkListActionSheetDelegate {
+  var kkListActionSheet: kkListActionSheet?
+
+  override func viewDidLoad {
+    super.viewDidLoad()
+    kkListActionSheet = KkListActionSheet.createInit(self)
+    kkListActionSheet!.delegate = self
+  }
+
+  @IBAction func buttonPushed (button: UIButton) {
+    kkListActionSheet.showHide()
+  }
+}
+```
 
 ## Licence
 [MIT](https://github.com/kuririnz/KkListActionSheet-SWIFT/blob/develop/LICENSE)
